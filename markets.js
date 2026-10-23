@@ -1,0 +1,216 @@
+import { IMG } from '@/data/site';
+
+export const markets = [
+  {
+    id: 'datacenter-solar',
+    image: IMG.datacenter,
+    badge: ['Infraestrutura crítica e energia', 'Critical infrastructure and energy'],
+    title: ['Data centers sustentáveis com usina solar dedicada e BESS', 'Sustainable data centers with dedicated solar and BESS'],
+    short: ['Data centers e usina solar', 'Data centers and solar'],
+    tagline: [
+      'Implantação turn-key de data centers de alta densidade integrados a complexos fotovoltaicos dedicados e armazenamento.',
+      'Turn-key delivery of high-density data centers integrated with dedicated solar complexes and storage.',
+    ],
+    description: [
+      'Integração de engenharia civil, climatização de alta densidade, subestações de alta tensão e usinas solares behind-the-meter para operação contínua.',
+      'Integration of civil engineering, high-density cooling, high-voltage substations and behind-the-meter solar plants for continuous operation.',
+    ],
+    overview: [
+      'Projetamos a cadeia energética completa de um data center: da subestação de entrada ao último rack. O escopo cobre análise de carga, arquitetura elétrica redundante, refrigeração líquida ou por ar, controle de ambiente e a usina solar dedicada com armazenamento, além do modelo de operação e manutenção.',
+      'We design the complete energy chain of a data center: from the incoming substation to the last rack. Scope covers load analysis, redundant electrical architecture, liquid or air cooling, environmental control and the dedicated solar plant with storage, plus the operation and maintenance model.',
+    ],
+    solutions: [
+      ['Arquitetura elétrica redundante e proteção de cargas críticas.', 'Redundant electrical architecture and critical load protection.'],
+      ['Usina fotovoltaica dedicada e sistema de armazenamento (BESS).', 'Dedicated photovoltaic plant and battery storage (BESS).'],
+      ['Refrigeração de alta densidade e gestão térmica.', 'High-density cooling and thermal management.'],
+      ['Monitoramento contínuo, telemetria e manutenção preditiva.', 'Continuous monitoring, telemetry and predictive maintenance.'],
+    ],
+    specs: [
+      ['Escala de projeto', 'Project scale', '1 MW a 100 MW de carga de TI', '1 MW to 100 MW of IT load'],
+      ['Arquitetura elétrica', 'Electrical architecture', 'N+1 / 2N', 'N+1 / 2N'],
+      ['Refrigeração', 'Cooling', 'Ar, imersão ou líquido direto ao chip', 'Air, immersion or direct-to-chip'],
+      ['Integração renovável', 'Renewable integration', 'Solar behind-the-meter + BESS', 'Behind-the-meter solar + BESS'],
+    ],
+    standards: ['ABNT NBR 5410', 'IEC 60364', 'IEEE 493', 'TIA-942 (referência)'],
+    services: ['energy', 'engineering', 'technology', 'infrastructure'],
+    projects: ['microrede-hibrida', 'scada-h2v'],
+    calculator: { label: ['Carga de TI', 'IT load'], unit: 'MW', min: 1, max: 100, step: 1, value: 10 },
+  },
+  {
+    id: 'green-hydrogen',
+    image: IMG.hydrogen,
+    badge: ['Hidrogênio verde e indústria química', 'Green hydrogen and chemical industry'],
+    title: ['Hidrogênio verde: eletrólise PEM e dessalinização', 'Green hydrogen: PEM electrolysis and desalination'],
+    short: ['Hidrogênio verde', 'Green hydrogen'],
+    tagline: [
+      'Engenharia integrada de plantas de H2V com eletrólise PEM, osmose reversa e geração solar dedicada.',
+      'Integrated engineering of green hydrogen plants with PEM electrolysis, reverse osmosis and dedicated solar generation.',
+    ],
+    description: [
+      'Modelagem eletroquímica, arquitetura elétrica de potência, controle de processo e integração água-energia para plantas de hidrogênio verde.',
+      'Electrochemical modelling, power architecture, process control and water-energy integration for green hydrogen plants.',
+    ],
+    overview: [
+      'O hidrogênio verde exige sincronizar geração variável, dessalinização e stacks eletrolíticos em uma malha de controle única. Trabalhamos na definição de arranjo, na proteção dos equipamentos contra transitórios e no desenho do sistema de supervisão que garante estabilidade operacional e rastreabilidade de produção.',
+      'Green hydrogen requires synchronizing variable generation, desalination and electrolyser stacks in a single control loop. We define the layout, protect equipment against transients and design the supervision system that guarantees operational stability and production traceability.',
+    ],
+    solutions: [
+      ['Arranjo elétrico de potência e proteção dos stacks PEM.', 'Power architecture and PEM stack protection.'],
+      ['Integração com dessalinização por osmose reversa (SWRO).', 'Integration with reverse osmosis desalination (SWRO).'],
+      ['SCADA de processo, controle preditivo e qualidade de energia.', 'Process SCADA, predictive control and power quality.'],
+      ['Análise de ciclo de vida e rastreabilidade de emissões.', 'Life cycle analysis and emissions traceability.'],
+    ],
+    specs: [
+      ['Tecnologia de eletrólise', 'Electrolysis technology', 'PEM', 'PEM'],
+      ['Escala de planta', 'Plant scale', '20 a 300 MWp de geração dedicada', '20 to 300 MWp of dedicated generation'],
+      ['Água de processo', 'Process water', 'SWRO com recuperação de rejeito', 'SWRO with reject recovery'],
+      ['Controle', 'Control', 'SCADA com modulação dinâmica de potência', 'SCADA with dynamic power modulation'],
+    ],
+    standards: ['ISO 22734', 'IEC 60079', 'ASME B31.3'],
+    services: ['energy', 'technology', 'safety', 'engineering'],
+    projects: ['scada-h2v', 'microrede-hibrida'],
+    calculator: { label: ['Potência de eletrólise', 'Electrolysis power'], unit: 'MW', min: 5, max: 300, step: 5, value: 50 },
+  },
+  {
+    id: 'biomethane',
+    image: IMG.biomethane,
+    badge: ['Biogás e economia circular', 'Biogas and circular economy'],
+    title: ['Biometano, digestão anaeróbia e upgrading', 'Biomethane, anaerobic digestion and upgrading'],
+    short: ['Biometano', 'Biomethane'],
+    tagline: [
+      'Plantas de biometano com rastreabilidade de insumos, upgrading e integração à rede de gás.',
+      'Biomethane plants with feedstock traceability, upgrading and gas grid integration.',
+    ],
+    description: [
+      'Engenharia de digestão anaeróbia, purificação de biogás, controle de odor e balanço de nutrientes para cadeias agroindustriais.',
+      'Anaerobic digestion engineering, biogas upgrading, odour control and nutrient balance for agro-industrial chains.',
+    ],
+    overview: [
+      'Projetamos plantas que transformam resíduos agroindustriais em energia e fertilizante, com foco em estabilidade biológica dos reatores, qualidade do gás entregue e rastreabilidade dos insumos para fins de certificação.',
+      'We design plants that convert agro-industrial waste into energy and fertilizer, focusing on biological reactor stability, delivered gas quality and feedstock traceability for certification.',
+    ],
+    solutions: [
+      ['Dimensionamento de reatores e balanço de substratos.', 'Reactor sizing and substrate balance.'],
+      ['Upgrading de biogás e controle de qualidade do gás.', 'Biogas upgrading and gas quality control.'],
+      ['Gestão de digestato e retorno de nutrientes ao solo.', 'Digestate management and nutrient return to soil.'],
+      ['Instrumentação, odor e monitoramento de emissões.', 'Instrumentation, odour and emissions monitoring.'],
+    ],
+    specs: [
+      ['Escala típica', 'Typical scale', '200 a 5.000 m³/h de biogás', '200 to 5,000 m³/h of biogas'],
+      ['Substratos', 'Feedstocks', 'Resíduos agroindustriais e urbanos', 'Agro-industrial and urban waste'],
+      ['Upgrading', 'Upgrading', 'Membrana ou lavagem com água', 'Membrane or water scrubbing'],
+      ['Destino', 'Output', 'Injeção em rede, GNC ou geração', 'Grid injection, CNG or generation'],
+    ],
+    standards: ['ABNT NBR 16903', 'ISO 6976', 'Resolução ANP aplicável'],
+    services: ['environment', 'energy', 'agriculture', 'safety'],
+    projects: ['ferramenta-florestal', 'prad-bacia'],
+    calculator: { label: ['Vazão de biogás', 'Biogas flow'], unit: 'm³/h', min: 100, max: 5000, step: 100, value: 800 },
+  },
+  {
+    id: 'solar-plants',
+    image: IMG.solar,
+    badge: ['Geração distribuída e centralizada', 'Distributed and utility-scale generation'],
+    title: ['Usinas solares: do estudo de recurso ao comissionamento', 'Solar plants: from resource study to commissioning'],
+    short: ['Usinas solares', 'Solar plants'],
+    tagline: [
+      'Engenharia completa de usinas fotovoltaicas com análise de recurso, projeto elétrico e gestão de conexão.',
+      'Complete photovoltaic plant engineering with resource analysis, electrical design and grid connection management.',
+    ],
+    description: [
+      'Projeto, homologação e comissionamento de usinas solares para autoprodução, mercado livre e geração centralizada.',
+      'Design, homologation and commissioning of solar plants for self-generation, free market and utility scale.',
+    ],
+    overview: [
+      'Cada usina começa por um estudo de recurso e restrições de conexão. A partir disso definimos arranjo, string design, proteção, cabeamento e a estratégia de comissionamento — com documentação as-built e memoriais técnicos completos.',
+      'Every plant starts with a resource and grid-connection study. From there we define layout, string design, protection, cabling and the commissioning strategy — with full as-built documentation and technical reports.',
+    ],
+    solutions: [
+      ['Estudo de recurso solar e simulação de geração.', 'Solar resource study and generation simulation.'],
+      ['Projeto elétrico, estrutural e de proteção.', 'Electrical, structural and protection design.'],
+      ['Homologação junto à concessionária e ART.', 'Utility homologation and technical liability.'],
+      ['Comissionamento, ensaios e operação assistida.', 'Commissioning, testing and assisted operation.'],
+    ],
+    specs: [
+      ['Escala', 'Scale', '3 kWp a 300 MWp', '3 kWp to 300 MWp'],
+      ['Modelos', 'Models', 'Autoprodução, ACL, geração centralizada', 'Self-generation, free market, utility'],
+      ['Módulos', 'Modules', 'Bifaciais mono PERC / TOPCon', 'Bifacial mono PERC / TOPCon'],
+      ['Estrutura', 'Structure', 'Solo, telhado ou carport', 'Ground, rooftop or carport'],
+    ],
+    standards: ['ABNT NBR 16690', 'ABNT NBR 16274', 'IEC 61724', 'Resolução Normativa ANEEL'],
+    services: ['energy', 'engineering', 'esg', 'safety'],
+    projects: ['microrede-hibrida', 'inventario-florestal'],
+    calculator: { label: ['Potência instalada', 'Installed capacity'], unit: 'kWp', min: 10, max: 5000, step: 10, value: 300 },
+  },
+  {
+    id: 'environmental-monitoring',
+    image: IMG.environment,
+    badge: ['Inteligência ambiental', 'Environmental intelligence'],
+    title: ['Monitoramento ambiental contínuo e restauração', 'Continuous environmental monitoring and restoration'],
+    short: ['Monitoramento ambiental', 'Environmental monitoring'],
+    tagline: [
+      'Observatórios ambientais com satélite, drone e sensores de campo integrados em uma única série temporal.',
+      'Environmental observatories with satellite, drone and field sensors integrated into one time series.',
+    ],
+    description: [
+      'Diagnóstico, licenciamento, PRAD e monitoramento contínuo com evidência auditável para operações industriais.',
+      'Diagnosis, licensing, degraded land recovery and continuous monitoring with auditable evidence for industrial operations.',
+    ],
+    overview: [
+      'Combinamos imagens orbitais, voos com LiDAR e sensores de campo para produzir séries temporais consistentes de cobertura vegetal, umidade, qualidade da água e pressão sobre ecossistemas — com rastreabilidade de método e versionamento de dados.',
+      'We combine orbital imagery, LiDAR flights and field sensors to produce consistent time series of vegetation cover, moisture, water quality and ecosystem pressure — with method traceability and data versioning.',
+    ],
+    solutions: [
+      ['Linha de base ambiental e inventário de biodiversidade.', 'Environmental baseline and biodiversity inventory.'],
+      ['PRAD, restauração e acompanhamento de metas.', 'Degraded land recovery, restoration and target tracking.'],
+      ['Monitoramento hídrico, atmosférico e de ruído.', 'Water, atmospheric and noise monitoring.'],
+      ['Relatórios auditáveis e apoio a processos regulatórios.', 'Auditable reporting and regulatory process support.'],
+    ],
+    specs: [
+      ['Resolução de imageamento', 'Imaging resolution', '10 m satélite / 2,5 cm drone', '10 m satellite / 2.5 cm drone'],
+      ['Frequência', 'Frequency', 'Contínua com revisita semanal', 'Continuous with weekly revisit'],
+      ['Indicadores', 'Indicators', 'NDVI, umidade, turbidez, biodiversidade', 'NDVI, moisture, turbidity, biodiversity'],
+      ['Entrega', 'Delivery', 'Painel, API e relatório PDF', 'Dashboard, API and PDF report'],
+    ],
+    standards: ['CONAMA 237/420', 'Lei 12.651/2012', 'ISO 14001'],
+    services: ['environment', 'forestry', 'technology', 'esg'],
+    projects: ['prad-bacia', 'observatorio-prad', 'inventario-florestal'],
+    calculator: { label: ['Área monitorada', 'Monitored area'], unit: 'ha', min: 50, max: 100000, step: 50, value: 5000 },
+  },
+  {
+    id: 'ports-maritime',
+    image: IMG.port,
+    badge: ['Portos e operações marítimas', 'Ports and maritime operations'],
+    title: ['Portos inteligentes e conformidade MARPOL', 'Smart ports and MARPOL compliance'],
+    short: ['Portos e marítimo', 'Ports and maritime'],
+    tagline: [
+      'Vigilância de águas portuárias, inteligência de atracação e automação de conformidade ambiental.',
+      'Port water surveillance, berth intelligence and environmental compliance automation.',
+    ],
+    description: [
+      'Redes de sensores, visão computacional e integração com sistemas portuários para operação mais segura e rastreável.',
+      'Sensor networks, computer vision and port system integration for safer, traceable operations.',
+    ],
+    overview: [
+      'Portos concentram risco ambiental e operacional ao mesmo tempo. Estruturamos uma camada de dados única que conecta boias, câmeras, AIS e sistemas de pátio, permitindo detectar anomalias, documentar conformidade e apoiar decisões de atracação.',
+      'Ports concentrate environmental and operational risk at once. We structure a single data layer connecting buoys, cameras, AIS and yard systems, enabling anomaly detection, compliance documentation and berthing decisions.',
+    ],
+    solutions: [
+      ['Boias multiparamétricas e monitoramento de efluentes.', 'Multiparameter buoys and effluent monitoring.'],
+      ['Visão computacional para detecção de manchas e OCR de contêineres.', 'Computer vision for spill detection and container OCR.'],
+      ['Integração AIS/VTS e inteligência de atracação.', 'AIS/VTS integration and berth intelligence.'],
+      ['Relatórios automáticos de conformidade MARPOL.', 'Automated MARPOL compliance reporting.'],
+    ],
+    specs: [
+      ['Sensores', 'Sensors', 'Boias, câmeras térmicas, AIS, LiDAR de vento', 'Buoys, thermal cameras, AIS, wind LiDAR'],
+      ['Área coberta', 'Coverage', 'Bacia de evolução e canais de acesso', 'Manoeuvring basin and access channels'],
+      ['Latência', 'Latency', 'Alerta em segundos na borda', 'Edge alerting in seconds'],
+      ['Integração', 'Integration', 'TOS, VTS e autoridades portuárias', 'TOS, VTS and port authorities'],
+    ],
+    standards: ['MARPOL Anexos I–VI', 'Convenção SOLAS', 'Normas da Autoridade Marítima'],
+    services: ['ports-maritime', 'technology', 'safety', 'environment'],
+    projects: ['smartportos', 'green-terminal'],
+    calculator: { label: ['Extensão de cais', 'Berth length'], unit: 'm', min: 100, max: 5000, step: 50, value: 800 },
+  },
+];
+
+export const marketById = (id) => markets.find((m) => m.id === id);
